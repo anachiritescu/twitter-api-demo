@@ -1,0 +1,42 @@
+#%RAML 0.8
+title: Twitter API
+version: v1
+
+
+/user: 
+  get:
+      description: Get Profile of the logged in user.
+      responses: 
+          200:
+            description: Success
+            body:
+              application/json: 
+                example: | 
+                  {
+                    "id" : "123",
+                    "name" : "MaxMule Test",
+                    "username" : "maxmule_test",
+                    "description" : "Integration hero, fast and always hungry",
+                    "location" : "Stockholm, Sweden"                    
+                  }
+  /tweet: 
+    post: 
+        description: Post a new user update.
+        body: 
+          application/json:
+            example: | 
+              {
+                "message" : "Hello Twitter!"
+              }
+        responses: 
+          200:
+            body: 
+              application/json:
+                example: | 
+                  {
+                    "status" : "ok"
+                  }
+        
+                
+            
+    
