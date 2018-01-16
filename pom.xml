@@ -27,6 +27,8 @@
 					<muleVersion>3.8.5</muleVersion>
 					<username>${username}</username>
 					<password>${password}</password>
+					 <redeploy>true</redeploy>
+					 <workerType>Micro</workerType>
 					<environment>Sandbox</environment>
 					<application>target/twitter-api-demo-1.0.0-SNAPSHOT.zip</application>
 					<applicationName>twitter-api-demo</applicationName>
